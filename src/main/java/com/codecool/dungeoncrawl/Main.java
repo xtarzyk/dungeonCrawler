@@ -38,7 +38,10 @@ public class Main extends Application {
 
         ui.add(new Label("Health: "), 0, 0);
         ui.add(healthLabel, 1, 0);
-        ui.add(button, 3, 3);
+        ui.add(button, 1, 1, 2, 2);
+        button.setDisable(true);
+        ui.setHgap(10);
+        ui.setVgap(10);
 
         BorderPane borderPane = new BorderPane();
 
@@ -92,4 +95,5 @@ public class Main extends Application {
         }
         healthLabel.setText("" + map.getPlayer().getHealth());
     }
+
 }

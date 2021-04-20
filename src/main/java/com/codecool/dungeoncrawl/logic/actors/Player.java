@@ -10,4 +10,11 @@ public class Player extends Actor {
     public String getTileName() {
         return "player";
     }
+
+    @Override
+    public void move(int dx, int dy) {
+//        System.out.println("Player moves start");
+        super.move(dx, dy);
+//        System.out.println("Player moves end");
+    }
 }
